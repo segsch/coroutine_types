@@ -1,3 +1,6 @@
+#include <memory>
+#include <coroutine>
+
 template<typename T>
 struct manual_lifetime {
 public:
