@@ -1,6 +1,9 @@
-#include <utility>
+#ifndef COROUTINE_TYPES_GENERATOR_H
+#define COROUTINE_TYPES_GENERATOR_H
+
 #include <memory>
 #include <coroutine>
+#include <utility>
 
 template<typename T>
 struct manual_lifetime {
@@ -198,3 +201,5 @@ private:
 
     handle_t coro_;
 };
+
+#endif
