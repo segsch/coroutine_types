@@ -15,7 +15,7 @@ struct generator {
         auto final_suspend() noexcept { return std::suspend_always{}; }
         void unhandled_exception() { std::terminate(); }
         void return_void() {}
-        auto yield_value(int value) {
+        auto yield_value(T value) {
             current_value_ = value;
             return std::suspend_always{};
         }
